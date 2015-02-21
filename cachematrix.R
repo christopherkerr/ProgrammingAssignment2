@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## My approach:
+## Steps:
+## 1. Test if input matrix is in the cache
+## 2. If so, return cache
+## 3. If not, invert, return and add to cache
 
-## Write a short comment describing this function
+## Cache management. Will create a cache for the matrix.
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
