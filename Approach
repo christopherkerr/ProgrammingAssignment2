@@ -1,0 +1,6 @@
+Steps:
+1. Check if matrix is in cache. 
+2. If not, invert the matrix, add to cache
+3. If is, then return cached result
+
+cacheSolve() should manage step 1, then call makeCacheMatrix() to manage steps 2 & 3
