@@ -31,8 +31,8 @@ cacheSolve <- function(x, ...) {
                 message("getting cached data")
                 return(m)
         }
-        data <- x$get() ## if no cachce, retrieves the original matrix
-        m <- solve(data, ...) ## inverts matrix
+        originalmatrix <- x$get() ## if no cachce, retrieves the original matrix
+        m <- solve(originalmatrix, ...) ## inverts matrix
         x$setinverse(m) ## adds inverted matrix to cache
         m
 }
